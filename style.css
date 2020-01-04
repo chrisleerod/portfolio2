@@ -33,12 +33,11 @@ header {
 }
 
 .logo {
+    margin-left: 2em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     cursor: pointer;
     top: 0;
-    left: 0;
-    margin-left: 1em;
     color: white;
     font-size: 18px;
     padding-bottom: 5px;
@@ -125,7 +124,7 @@ nav a:hover {
     }
 
     .logo {
-        margin-left: 2em;
+        margin-left: 0;
         float: left;
         width: 19%;
         padding-top: 15px;
@@ -156,9 +155,9 @@ nav a:hover {
     }
     
     nav li {
-        margin-right: 2em;
       margin-left: 3em;
       margin-bottom: 0;
+      text-align: right;
     }
     
     nav a {
@@ -187,6 +186,19 @@ nav a:hover {
       }
   }
 
+  @media screen and (max-width: 1100px) {
+
+    .logo {
+        margin-left: 1.75em;
+    }
+
+    nav li {
+        margin-left: 2.25em;
+        margin-right: 2.25em;
+        margin-bottom: 1em;
+      }
+}
+
 .welcome {
     background-image: url(https://images.unsplash.com/photo-1466007599518-a696875f4757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
     margin: auto;
@@ -199,12 +211,13 @@ nav a:hover {
 }
 
 .welcome-message {
+    margin-left: 2em;
+    margin-right: 2em;
     padding: 16px;
     max-width: 1100px;
     width: 100%;
     height: auto;
     background: white;
-    padding-bottom: 16px;
 }
 
 .welcome-h {
