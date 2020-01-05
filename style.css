@@ -118,6 +118,61 @@ nav a:hover {
     height: 56.09px;
   }
 
+  .welcome {
+    background-image: url(https://images.unsplash.com/photo-1466007599518-a696875f4757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    margin: auto;
+    height: 720px;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-message {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 16px;
+    max-width: 1100px;
+    width: 100%;
+    height: auto;
+    background: white;
+}
+
+.welcome-h {
+    padding-bottom: 16px;
+    margin: 0px;
+}
+
+.welcome-p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-link {
+    text-decoration: none;
+    color: black;
+}
+
+.learn-more {
+    display: inline;
+}
+
+.learn-more-p {
+    margin: 0px;
+    padding-top: 16px;
+    font-size: 21px;
+    font-weight: 700;
+    float: left;
+}
+
+.arrow {
+    margin-left: 16px;
+    padding-top: 16px;
+    float: left;
+    width: 24px;
+}
+
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
       display: none;
@@ -188,6 +243,10 @@ nav a:hover {
 
   @media screen and (max-width: 1100px) {
 
+    .welcome {
+        height: 480px;
+    }
+
     .logo {
         margin-left: 1.75em;
     }
@@ -198,59 +257,3 @@ nav a:hover {
         margin-bottom: 1em;
       }
 }
-
-.welcome {
-    background-image: url(https://images.unsplash.com/photo-1466007599518-a696875f4757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
-    margin: auto;
-    height: 720px;
-    width: 100%;
-    max-width: 1280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.welcome-message {
-    margin-left: 2em;
-    margin-right: 2em;
-    padding: 16px;
-    max-width: 1100px;
-    width: 100%;
-    height: auto;
-    background: white;
-}
-
-.welcome-h {
-    padding-bottom: 16px;
-    margin: 0px;
-}
-
-.welcome-p {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.about-link {
-    text-decoration: none;
-    color: black;
-}
-
-.learn-more {
-    display: inline;
-}
-
-.learn-more-p {
-    margin: 0px;
-    padding-top: 16px;
-    font-size: 21px;
-    font-weight: 700;
-    float: left;
-}
-
-.arrow {
-    margin-left: 16px;
-    padding-top: 16px;
-    float: left;
-    width: 24px;
-}
-  
