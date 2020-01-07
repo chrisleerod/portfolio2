@@ -306,6 +306,7 @@ nav a:hover {
 
     .welcome {
         height: 480px;
+        margin-top: 64px;
     }
 
     .divider {
