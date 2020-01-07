@@ -119,8 +119,9 @@ nav a:hover {
   }
 
   .welcome {
-    background-image: url(https://images.unsplash.com/photo-1466007599518-a696875f4757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
-    margin: auto;
+   /* background-image: url(https://images.unsplash.com/photo-1466007599518-a696875f4757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+   */
+   margin: auto;
     height: 720px;
     width: 100%;
     max-width: 1280px;
@@ -135,10 +136,9 @@ nav a:hover {
     margin-left: 2em;
     margin-right: 2em;
     max-width: 1100px;
-    padding: 2em;
     width: 100%;
+    color: black;
     height: auto;
-    background: white;
 }
 
 .welcome-h {
@@ -147,6 +147,11 @@ nav a:hover {
 }
 
 .welcome-p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.welcome-thanks {
     font-size: 18px;
     font-weight: 500;
 }
@@ -166,6 +171,7 @@ nav a:hover {
     font-size: 21px;
     font-weight: 700;
     float: left;
+    color: black;
 }
 
 .arrow {
@@ -173,6 +179,7 @@ nav a:hover {
     padding-top: 16px;
     float: left;
     width: 24px;
+    color: white;
 }
 
 .divider {
@@ -188,49 +195,44 @@ nav a:hover {
     font-weight: 500;
 }
 
-.projects {
+.projects-h {
     margin: auto;
     max-width: 1100px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 50px;
-    padding-bottom: 64px;
 }
 
 .project {
-    border-radius: 12px;
+    margin: 0 auto;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .project1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 1100px;
 }
 
 .project2 {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 1100px;
 }
 
 .project3 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 7;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 1100px;
 }
 
 .project4 {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 4;
-    grid-row-end: 7;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 1100px;
 }
 
 
