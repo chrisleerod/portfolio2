@@ -9,10 +9,21 @@ const lines = [lineOne, lineTwo, lineThree];
 
 var tl = gsap.timeline();
 
+var welcome = gsap.timeline();
+
 var toggleMenu = gsap.timeline({ paused: true });
 toggleMenu.reversed(true); // IMPORTANT to set the init state to true
 
+welcome
+    .from(".welcome-h", {y: 50, opacity: 0, duration: .75})
+    .from(".welcome-p", {y: 50, opacity: 0, duration: .75,}, .50)
+    .from(".welcome-thanks", {y: 50, opacity: 0, duration: .75,}, 1)
+    .from(".learn-more-p", {y: 50, opacity: 0, duration: .75,}, 1.5)
+    .from(".arrow", {y: 50, opacity: 0, duration: .75}, 1.5);
+
+
 gsap.to(".arrow", {x: 15, repeat: -1, yoyo: true,});
+
 
 const nextStateMap = {
   true: () => {
