@@ -20,7 +20,6 @@ welcome
     .from(".welcome-thanks", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .50)
     .from(".learn-more-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .75)
     .from(".arrow", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.25}, .75)
-    .from(".projects-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.25}, 1);
 
 
 gsap.to(".arrow", {x: 15, repeat: -1, yoyo: true,});
