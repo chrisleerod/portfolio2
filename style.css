@@ -178,8 +178,7 @@ nav a:hover {
 .divider {
     margin: auto;
     max-width: 1100px;
-    width: 100%;
-    height: auto;
+    height: 100%;
     background: white;
     margin-bottom: 64px;
 }
@@ -306,7 +305,7 @@ nav a:hover {
   @media screen and (max-width: 1100px) {
 
     .welcome {
-        height: 620px;
+        height: 480px;
     }
 
     .divider {
