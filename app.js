@@ -15,11 +15,12 @@ var toggleMenu = gsap.timeline({ paused: true });
 toggleMenu.reversed(true); // IMPORTANT to set the init state to true
 
 welcome
-    .from(".welcome-h", {y: 50, opacity: 0, duration: .75})
-    .from(".welcome-p", {y: 50, opacity: 0, duration: .75,}, .50)
-    .from(".welcome-thanks", {y: 50, opacity: 0, duration: .75,}, 1)
-    .from(".learn-more-p", {y: 50, opacity: 0, duration: .75,}, 1.5)
-    .from(".arrow", {y: 50, opacity: 0, duration: .75}, 1.5);
+    .from(".welcome-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5})
+    .from(".welcome-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .25)
+    .from(".welcome-thanks", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .50)
+    .from(".learn-more-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .75)
+    .from(".arrow", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.25}, .75)
+    .from(".projects-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.25}, 1);
 
 
 gsap.to(".arrow", {x: 15, repeat: -1, yoyo: true,});
