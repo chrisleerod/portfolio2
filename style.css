@@ -119,8 +119,7 @@ nav a:hover {
   }
 
   .welcome {
-    /* background-image: url(https://images.unsplash.com/photo-1466007599518-a696875f4757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
-    */
+    background-image: url(https://images.unsplash.com/photo-1466007599518-a696875f4757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
     margin: auto;
     height: 720px;
     width: 100%;
@@ -136,6 +135,7 @@ nav a:hover {
     margin-left: 2em;
     margin-right: 2em;
     max-width: 1100px;
+    padding: 2em;
     width: 100%;
     height: auto;
     background: white;
@@ -306,7 +306,6 @@ nav a:hover {
 
     .welcome {
         height: 480px;
-        margin-top: 64px;
     }
 
     .divider {
