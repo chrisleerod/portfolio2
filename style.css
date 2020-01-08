@@ -292,6 +292,14 @@ nav a:hover {
        margin: 0;
    }
 
+   .project-title-bl {
+    color: black;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    font-size: 18px;
+    margin: 0;
+}
+
    .motion {
        padding-top: 2px;
        padding-bottom: 2px;
