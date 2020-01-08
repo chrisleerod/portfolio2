@@ -8,14 +8,12 @@ const arrow = learnmore.querySelector('.arrow');
 const lines = [lineOne, lineTwo, lineThree];
 
 var tl = gsap.timeline();
-
+var ptl = gsap.timeline();
 var welcome = gsap.timeline();
-
 var toggleMenu = gsap.timeline({ paused: true });
-toggleMenu.reversed(true); // IMPORTANT to set the init state to true
 
 welcome
-    .to(".loader", {transformOrigin: "0% 0%", ease: Power4.easeOut, scaleY: 0, duration: 1.5})
+    .to(".loader", {transformOrigin: "0% 0%", ease: Power4.easeOut, scaleY: 0, duration: 1.5}, 1)
     .from(".welcome-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, 1.25)
     .from(".welcome-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, 1.5)
     .from(".welcome-thanks", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, 1.75)
@@ -26,6 +24,7 @@ welcome
 
 gsap.to(".arrow", {x: 15, repeat: -1, yoyo: true,});
 
+toggleMenu.reversed(true); // IMPORTANT to set the init state to true
 
 const nextStateMap = {
   true: () => {
