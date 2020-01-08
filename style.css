@@ -346,13 +346,13 @@ nav a:hover {
 
    .title {
        display: inline-block;
-       padding-top: 175px;
+       padding-top: 165px;
        padding-left: 32px;
        text-align: left;
    }
    
    .item-2 {
-    background-image: url("cyber-image.png");
+    background-image: url("kodai-image.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -364,7 +364,7 @@ nav a:hover {
    
    .item-3 {
      background-color:#13121b;
-     background-image: url("cyber-image.png");
+     background-image: url("nebula-image.png");
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
@@ -524,7 +524,7 @@ nav a:hover {
       }
 
       .title {
-        padding-top: 175px;
+        padding-top: 165px;
         padding-left: 32px;
         text-align: left;
     }
