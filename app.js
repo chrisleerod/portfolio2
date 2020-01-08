@@ -15,12 +15,13 @@ var toggleMenu = gsap.timeline({ paused: true });
 toggleMenu.reversed(true); // IMPORTANT to set the init state to true
 
 welcome
-    .from(".welcome-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5})
-    .from(".welcome-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .25)
-    .from(".welcome-thanks", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .50)
-    .from(".learn-more-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .75)
-    .from(".arrow", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, .75)
-    .from(".projects-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, 1)
+    .to(".loader", {transformOrigin: "0% 0%", ease: Power4.easeOut, scaleY: 0, duration: 1.5})
+    .from(".welcome-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, 1.25)
+    .from(".welcome-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, 1.5)
+    .from(".welcome-thanks", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, 1.75)
+    .from(".learn-more-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, 2.0)
+    .from(".arrow", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, 2.25)
+    .from(".projects-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, 2.50)
 
 
 gsap.to(".arrow", {x: 15, repeat: -1, yoyo: true,});

@@ -10,6 +10,16 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 500;
+    background-color: black;
+}
+
 :root {
     --background: rgba(0, 0, 0, .95);
 }
@@ -293,7 +303,7 @@ nav a:hover {
    }
 
    .project-title-bl {
-    color: black;
+    color: white;
     padding-top: 16px;
     padding-bottom: 8px;
     font-size: 18px;
