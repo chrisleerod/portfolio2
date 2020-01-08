@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background: white;
+    background: black;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -137,7 +137,7 @@ nav a:hover {
     margin-right: 2em;
     max-width: 1100px;
     width: 100%;
-    color: black;
+    color: white;
     height: auto;
 }
 
@@ -150,18 +150,18 @@ nav a:hover {
 
 .welcome-p {
     line-height: 1.7em;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 300;
 }
 
 .welcome-thanks {
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 500;
 }
 
 .about-link {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .learn-more {
@@ -171,11 +171,42 @@ nav a:hover {
 .learn-more-p {
     margin: 0px;
     padding-top: 16px;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 700;
     float: left;
-    color: black;
-    text-decoration: underline;
+    color: white;
+}
+
+.learn-more-p:after {
+    margin-top: 26px;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background-color: #272727;
+}
+
+.learn-more-p:before {
+    margin-top: 26px;
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background-color: #8a8a8a;
+    transform-origin: 0% 50%;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s
+}
+
+.learn-more-p:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .arrow {
@@ -190,11 +221,12 @@ nav a:hover {
     margin: auto;
     max-width: 1100px;
     height: 100%;
-    background: white;
+    background: black;
     margin-bottom: 32px;
 }
 
 .projects-h {
+    color: white;
     font-size: 48px;
     font-weight:700;
     margin: 0px;
@@ -226,6 +258,145 @@ nav a:hover {
 .one {
     text-align: center;
 }
+
+.container-grid {
+    transition: ease all .5s;
+    width: 1100px;
+    flex-wrap:wrap;
+    display:flex;
+    flex-direction:row;
+    margin:auto;
+    justify-content: space-between;
+    background-color: black;
+    padding-bottom: 64px;
+   }
+
+   .project-link {
+       text-decoration: none;
+   }
+
+   .project-container {
+       transition: all .3s ease-in-out;
+   }
+
+   .project-container:hover {
+    transform: scale(1.02);
+    }
+
+
+   .project-title {
+       color: white;
+       padding-top: 16px;
+       padding-bottom: 8px;
+       font-size: 18px;
+       margin: 0;
+   }
+
+   .motion {
+       padding-top: 2px;
+       padding-bottom: 2px;
+       padding-left: 6px;
+       padding-right: 6px;
+       border-radius: 4px;
+       width: 100%;
+       height: 100%;
+       background-color: #7425ff;
+       color: white;
+       font-size: 14px;
+       margin: 0;
+   }
+
+.ui {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: #fa6401;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+.web {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: #ff2347;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+   
+   .item-1 {
+     background-image: url(cyber-image.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height:260px;
+     width:500px;
+     border-radius: 16px;
+   }
+
+   .title {
+       display: inline-block;
+       padding-top: 175px;
+       padding-left: 32px;
+       text-align: left;
+   }
+   
+   .item-2 {
+    background-image: url("cyber-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+     height: 260px;
+     width: 500px;
+     border-radius: 16px;
+     margin-top: 50px;  
+   }
+   
+   .item-3 {
+     background-color:#13121b;
+     background-image: url("cyber-image.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height:260px;
+     width:500px;
+     border-radius:16px;
+   }
+
+   .item-4 {
+     background-color:#13121b;
+     background-image: url("cyber-image.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height:260px;
+     width:500px;
+     margin-top:50px;
+     border-radius:16px;
+     margin-top:50px;
+   }
+   
+   .item-5 {
+    background-color:#13121b;
+    background-image: url("cyber-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:260px;
+    width:500px;
+    border-radius:16px;
+  }
+   
 
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
@@ -334,23 +505,64 @@ nav a:hover {
         margin-bottom: 1em;
       }
 
-      .project1 {
-        margin-left: 2em;
-        margin-right: 2em;
-    }
+      .container-grid {
+          width: 100%;
+      }
 
-    .project2 {
-        margin-left: 2em;
-        margin-right: 2em;
-    }
+      .project-container {
+          width: 100%;
+          margin-right: 4em;
+      }
 
-    .project3 {
+      .item-1 {
+        height:260px;
+        width: 100%;
         margin-left: 2em;
         margin-right: 2em;
-    }
+        border-radius:16px;
+        margin-top:32px;  
+      }
 
-    .project4 {
+      .title {
+        padding-top: 175px;
+        padding-left: 32px;
+        text-align: left;
+    }
+      
+      .item-2 {
+        height:260px;
+        width: 100%;
         margin-left: 2em;
         margin-right: 2em;
-    }
+        border-radius:16px;
+        margin-top:32px;  
+      }
+      
+      .item-3 {
+        height:260px;
+        width: 100%;
+        margin-left: 2em;
+        margin-right: 2em;
+        border-radius:16px;
+        margin-top:32px;  
+      }
+   
+      .item-4 {
+        height:260px;
+        width: 100%;
+        margin-top:20px;
+        margin-left: 2em;
+        margin-right: 2em;
+        border-radius:16px;
+        margin-top:32px;
+      }
+
+      .item-5 {
+        height:260px;
+        width: 100%;
+        margin-left: 2em;
+        margin-right: 2em;
+        border-radius:16px;
+        margin-top:32px;  
+      }
 }
