@@ -327,6 +327,17 @@ nav a:hover {
 .project-container:nth-child(6) {
     animation-delay: 1.5s;
 }
+.project-container:hover {
+    transform: scale(1.03);
+}
+
+.project-title {
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    font-size: 18px;
+    margin: 0;
+}
 
 .project-container:hover {
     transform: scale(1.02);
@@ -571,7 +582,7 @@ nav a:hover {
       }
 
       .item-1 {
-        height:260px;
+        height:200px;
         width: 100%;
         margin-left: 2em;
         margin-right: 2em;
@@ -580,13 +591,13 @@ nav a:hover {
       }
 
       .title {
-        padding-top: 165px;
+        padding-top: 105px;
         padding-left: 32px;
         text-align: left;
     }
       
       .item-2 {
-        height:260px;
+        height:200px;
         width: 100%;
         margin-left: 2em;
         margin-right: 2em;
@@ -595,7 +606,7 @@ nav a:hover {
       }
       
       .item-3 {
-        height:260px;
+        height:200px;
         width: 100%;
         margin-left: 2em;
         margin-right: 2em;
@@ -604,7 +615,7 @@ nav a:hover {
       }
    
       .item-4 {
-        height:260px;
+        height:200px;
         width: 100%;
         margin-top:20px;
         margin-left: 2em;
@@ -614,7 +625,7 @@ nav a:hover {
       }
 
       .item-5 {
-        height:260px;
+        height:200px;
         width: 100%;
         margin-left: 2em;
         margin-right: 2em;
