@@ -51,3 +51,40 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('js-x');
   nextStateMap[isReversed]();
 })
+
+// helper function to determine if an element is in view
+const isInViewport = el => {
+  let top = el.offsetTop;
+  let left = el.offsetLeft;
+  let width = el.offsetWidth;
+  let height = el.offsetHeight;
+
+  while(el.offsetParent) {
+    el = el.offsetParent;
+    top += el.offsetTop;
+    left += el.offsetLeft;
+  }
+
+  return (
+    top < (window.pageYOffset + window.innerHeight) &&
+    left < (window.pageXOffset + window.innerWidth) &&
+    (top + height) > window.pageYOffset &&
+    (left + width) > window.pageXOffset
+  );
+};
+
+const grid = document.querySelector('.container-grid');
+const projects = document.getElementsByClassName('project-container');
+
+window.addEventListener('scroll', function (event) {
+  console.log(isInViewport(grid));
+	if (isInViewport(grid)) {
+    console.log('grid in view!');
+    for(let i = 0; i < projects.length; i++) {
+      if (projects[i].classList.contains('project-animation')) {
+        return;
+      }
+      projects[i].className += " project-animation"; 
+    }
+	}
+}, false);
