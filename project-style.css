@@ -235,6 +235,13 @@ nav a:hover {
     transition: all ease-in-out .5s;
 }
 
+.project-body-b {
+    float: left;
+    display: flex;
+    color: white;
+    transition: all ease-in-out .5s;
+}
+
 hr {
     float: left;
     width: 100%;
@@ -254,6 +261,20 @@ hr {
 
 .goal-h2 {
     padding-right: 18.5px;
+    width: 100%;
+    margin: 0px;
+    margin-right: 4em;
+}
+
+.goal-h3 {
+    padding-right: 48.58px;
+    width: 100%;
+    margin: 0px;
+    margin-right: 4em;
+}
+
+.goal-h4 {
+    padding-right: 9.13px;
     width: 100%;
     margin: 0px;
     margin-right: 4em;
@@ -708,6 +729,11 @@ hr {
     .project-body {
         display: inline;
         padding-top: 64px;
+        color: white;
+    }
+
+    .project-body-b {
+        display: inline;
         color: white;
     }
 
