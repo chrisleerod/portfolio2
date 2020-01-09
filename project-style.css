@@ -609,7 +609,23 @@ nav a:hover {
         margin-left: 1.75em;
     }
 
-    .project-image {
+    .project-image-nebula {
+        height: 300px;
+    }
+
+    .project-image-cybersole {
+        height: 300px;
+    }
+
+    .project-image-botbroker {
+        height: 300px;
+    }
+
+    .project-image-botmart {
+        height: 300px;
+    }
+
+    .project-image-kodai {
         height: 300px;
     }
 
