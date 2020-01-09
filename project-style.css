@@ -223,6 +223,7 @@ nav a:hover {
 }
 
 .software {
+    margin-bottom: 0px;
     float: left;
 }
 
@@ -232,6 +233,17 @@ nav a:hover {
     padding-top: 128px;
     color: white;
     transition: all ease-in-out .5s;
+}
+
+hr {
+    float: left;
+    width: 100%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #fff;
+    margin-top: 128px;
+    padding: 0;
 }
 
 .goal-h {
@@ -674,6 +686,10 @@ nav a:hover {
         padding-bottom: 32px;
         margin-left: 2em;
         margin-right: 2em;
+    }
+
+    hr {
+        margin-top: 64px;
     }
 
     .project-body {
