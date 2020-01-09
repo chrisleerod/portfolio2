@@ -296,9 +296,9 @@ nav a:hover {
     text-decoration: none;
 }
 
-/* .project-container {
+.project-container {
     transition: all .3s ease-in-out;
-} */
+}
 
 .project-animation {
     animation: fadeIn 1s ease-in both;

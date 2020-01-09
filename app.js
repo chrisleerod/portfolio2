@@ -77,14 +77,16 @@ const grid = document.querySelector('.container-grid');
 const projects = document.getElementsByClassName('project-container');
 
 window.addEventListener('scroll', function (event) {
-  console.log(isInViewport(grid));
-	if (isInViewport(grid)) {
-    console.log('grid in view!');
+  if (isInViewport(grid)) {
     for(let i = 0; i < projects.length; i++) {
       if (projects[i].classList.contains('project-animation')) {
+        projects[i].className = "project-container noop";
         return;
       }
-      projects[i].className += " project-animation"; 
+
+      if (!projects[i].classList.contains('noop')) {
+        projects[i].className += " project-animation"; 
+      }
     }
 	}
 }, false);
