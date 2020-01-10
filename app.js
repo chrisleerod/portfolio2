@@ -13,13 +13,12 @@ var welcome = gsap.timeline();
 var toggleMenu = gsap.timeline({ paused: true });
 
 welcome
-    .to(".loader", {transformOrigin: "0% 0%", ease: Power4.easeOut, scaleY: 0, duration: 1.5})
-    .from(".welcome-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, 1)
-    .from(".welcome-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, 1.25)
-    .from(".welcome-thanks", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, 1.50)
-    .from(".learn-more-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, 1.75)
-    .from(".arrow", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, 1.75)
-    .from(".projects-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, 2.25)
+    .from(".welcome-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5})
+    .from(".welcome-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .25)
+    .from(".welcome-thanks", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .50)
+    .from(".learn-more-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .75)
+    .from(".arrow", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, .75)
+    .from(".projects-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, 1)
 
 
 gsap.to(".arrow", {x: 15, repeat: -1, yoyo: true,});
