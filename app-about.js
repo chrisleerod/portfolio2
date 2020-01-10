@@ -14,10 +14,10 @@ var toggleMenu = gsap.timeline({ paused: true });
 toggleMenu.reversed(true); // IMPORTANT to set the init state to true
 
 welcome
-    .from(".welcome-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5})
-    .from(".welcome-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .25)
-    .from(".welcome-p2", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .50)
-    .from(".welcome-p3", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .75)
+    .from(".about-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5})
+    .from(".goal-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .25)
+    .from(".goal-p2", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .50)
+    .from(".goal-p3", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .75)
 
 
 const nextStateMap = {
