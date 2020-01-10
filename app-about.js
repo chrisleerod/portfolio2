@@ -18,6 +18,8 @@ welcome
     .from(".goal-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .25)
     .from(".goal-p2", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .50)
     .from(".goal-p3", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .75)
+    .from(".goal-p4", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, 1)
+    .from(".goal-p5", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, 1.25)
 
 
 const nextStateMap = {

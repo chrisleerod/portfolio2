@@ -195,18 +195,19 @@ nav a:hover {
 }
 
 .project-h {
-    font-size: 32px;
+    font-size: 48px;
     margin: 0px;
 }
 
 .year {
     font-size: 12px;
-    color: lightgray;
+    color: white;
     margin: 0;
     padding-bottom: 16px;
 }
 
 .project-p {
+    color: #b2b3b3;
 }
 
 .roles {
@@ -225,6 +226,17 @@ nav a:hover {
 .software {
     margin-bottom: 0px;
     float: left;
+}
+
+.video-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.kodai-video {
+    padding-top: 128px;
+    width: 100%;
+    max-width: 1100px;
 }
 
 .project-body {
@@ -248,15 +260,16 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #1a1a1a;
     margin-top: 128px;
     padding: 0;
 }
 
 .goal-h {
+    padding-right: 109.41px;
     width: 100%;
+    max-width: 248.69px;
     margin: 0px;
-    margin-right: 4em;
 }
 
 .about-h {
@@ -267,7 +280,7 @@ hr {
 }
 
 .goal-h2 {
-    padding-right: 18.5px;
+    padding-right: 45.96px;
     width: 100%;
     margin: 0px;
     margin-right: 4em;
@@ -288,18 +301,83 @@ hr {
 }
 
 .goal-p {
+    color: #b2b3b3;
     line-height: 1.7em;
     margin: 0px;
 }
 
+.white {
+    color: white;
+}
+
 .goal-p2 {
+    color: #b2b3b3;
     line-height: 1.7em;
     margin: 0px;
 }
 
 .goal-p3 {
+    color: #b2b3b3;
     line-height: 1.7em;
     margin: 0px;
+}
+
+.goal-p4 {
+    color: #b2b3b3;
+    line-height: 1.7em;
+    margin: 0px;
+}
+
+.goal-p5 {
+    color: #b2b3b3;
+    line-height: 1.7em;
+    margin: 0px;
+}
+
+.imagecrate {
+    text-decoration: underline;
+    font-weight: 700;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.imagecrate:hover {
+    color: white;
+}
+
+.imagecrate-link {
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.imagecrate-link:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.imagecrate-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.goal-p4 {
+    line-height: 1.7em;
+    margin: 0px;
+}
+
+.email {
+    color: white;
+}
+
+.linkedin {
+    fill: white;
+    width: 32px;
+}
+
+.github {
+    fill: white;
+    width: 32px;
 }
 
 .graph-gif {
@@ -729,7 +807,19 @@ hr {
     }
 
     .project-h {
+        font-size: 32px;
         padding-top: 32px;
+    }
+
+    .video-container {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .kodai-video {
+        padding-top: 64px;
+        width: 100%;
+        max-width: 1100px;
     }
 
     .project-bio {
