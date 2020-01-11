@@ -905,6 +905,7 @@ hr {
     }
 
     .goal-h {
+        padding-right: 0px;
         width: 100%;
         float: none;
     }
