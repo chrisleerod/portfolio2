@@ -187,6 +187,28 @@ nav a:hover {
     line-height: 1.7em;
 }
 
+.stat-container {
+    padding-top: 1em;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.kodai-twitter {
+    text-decoration: none;
+    color: white;
+}
+
+.stat {
+    font-size: 6px;
+    display: inline-block;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 4px;
+    background-color: #7425ff;
+    color: white;
+    margin-right: 2em;
+}
+
 .project-bio {
     margin: 0 auto;
     padding-top: 32px;
@@ -239,6 +261,11 @@ nav a:hover {
     max-width: 1100px;
 }
 
+.inspiration-video {
+    width: 100%;
+    max-width: 1100px;
+}
+
 .project-body {
     float: left;
     display: flex;
@@ -252,6 +279,12 @@ nav a:hover {
     display: flex;
     color: white;
     transition: all ease-in-out .5s;
+}
+
+.dribbble {
+    text-decoration: underline;
+    font-weight: 700;
+    color: white;
 }
 
 hr {
@@ -384,6 +417,19 @@ hr {
     margin: 0 auto;
     width: 100%;
     max-width: 1100px;
+}
+
+.data {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.data-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
   .welcome {
@@ -811,6 +857,12 @@ hr {
         padding-top: 32px;
     }
 
+    .stat-container {
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+    
+
     .video-container {
         margin-left: 2em;
         margin-right: 2em;
@@ -818,6 +870,14 @@ hr {
 
     .kodai-video {
         padding-top: 64px;
+        width: 100%;
+        max-width: 1100px;
+    }
+
+    .data {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        margin: 0 auto;
         width: 100%;
         max-width: 1100px;
     }
