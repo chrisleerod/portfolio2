@@ -13,9 +13,9 @@ var welcome = gsap.timeline();
 var toggleMenu = gsap.timeline({ paused: true });
 
 welcome
-    .from(".welcome-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5})
-    .from(".welcome-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .25)
-    .from(".welcome-thanks", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .50)
+    .from(".welcome-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, .25)
+    .from(".welcome-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .50)
+    .from(".welcome-thanks", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .75)
     .from(".learn-more-p", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5,}, .75)
     .from(".arrow", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, .75)
     .from(".projects-h", {ease: Power4.easeOut, y: 50, opacity: 0, duration: 1.5}, 1)
