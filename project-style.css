@@ -229,7 +229,7 @@ nav a:hover {
 }
 
 .project-p {
-    color: #b2b3b3;
+    color: #7c7c7c;
 }
 
 .roles {
@@ -334,7 +334,7 @@ hr {
 }
 
 .goal-p {
-    color: #b2b3b3;
+    color: #7c7c7c;
     line-height: 1.7em;
     margin: 0px;
 }
@@ -344,25 +344,25 @@ hr {
 }
 
 .goal-p2 {
-    color: #b2b3b3;
+    color: #7c7c7c;
     line-height: 1.7em;
     margin: 0px;
 }
 
 .goal-p3 {
-    color: #b2b3b3;
+    color: #7c7c7c;
     line-height: 1.7em;
     margin: 0px;
 }
 
 .goal-p4 {
-    color: #b2b3b3;
+    color: #7c7c7c;
     line-height: 1.7em;
     margin: 0px;
 }
 
 .goal-p5 {
-    color: #b2b3b3;
+    color: #7c7c7c;
     line-height: 1.7em;
     margin: 0px;
 }
@@ -756,6 +756,44 @@ hr {
     width:500px;
     border-radius:16px;
   }
+
+  .footer-container {
+      margin: 0 auto;
+      max-width: 1100px;
+  }
+
+  .footer {
+      color: #7c7c7c;
+      display: inline;
+      font-size: 14px;
+  }
+
+  .left-align {
+      float: left;
+      width: 25%;
+      margin-bottom: 196px;
+  }
+
+  .mid-left {
+      float: left;
+      width: 40%;
+  }
+
+  .footer-spacer {
+      float: left;
+      height: 0px;
+      width: 25%;
+  }
+
+  .right-align {
+      float: right;
+      width: 5%;
+  }
+
+  .footer-link {
+      text-decoration: none;
+      color: white;
+  }
    
 
 @media screen and (min-width: 800px) {
@@ -1008,4 +1046,57 @@ hr {
         border-radius:16px;
         margin-top:32px;  
       }
+
+      .footer-container {
+          margin-left: 2em;
+          margin-right: 2em;
+    }
+
+    .footer {
+        color: #7c7c7c;
+        display: inline;
+    }
+  
+    .left-align {
+        float: none;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+  
+    .mid-left {
+        float: none;
+        width: 90%;
+    }
+  
+    .footer-spacer {
+        float: left;
+        height: 0px;
+        width: 0%;
+    }
+  
+    .right-align {
+        display: flex;
+        float: none;
+        width: 100%;
+    }
+
+    .footer-link {
+        text-decoration: none;
+        color: white;
+    }
+
+    .right-align:nth-child(2) {
+        flex: 1;
+    }
+
+    .ft-link1 {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .ft-link2 {
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-bottom: 5em;
+    }
 }
