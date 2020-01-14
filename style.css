@@ -178,7 +178,7 @@ nav a:hover {
 }
 
 .welcome-p {
-    color: #b2b3b3;
+    color: #7c7c7c;
     line-height: 1.7em;
     font-size: 21px;
     font-weight: 300;
@@ -476,6 +476,52 @@ nav a:hover {
     width:500px;
     border-radius:16px;
   }
+
+  .footer-container {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.footer {
+    color: #7c7c7c;
+    display: inline;
+    font-size: 14px;
+}
+
+.left-align {
+    float: left;
+    width: 25%;
+    margin-bottom: 128px;
+    margin-top: 98px;
+}
+
+.mid-left {
+    float: left;
+    width: 40%;
+    margin-top: 98px;
+}
+
+.footer-spacer {
+    float: left;
+    height: 0px;
+    width: 25%;
+}
+
+.right-align {
+    float: right;
+    width: 5%;
+    margin-top: 98px;
+}
+
+.number {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
    
 
 @media screen and (min-width: 800px) {
@@ -646,4 +692,59 @@ nav a:hover {
         border-radius:16px;
         margin-top:32px;  
       }
+
+      .footer-container {
+        margin-left: 2em;
+        margin-right: 2em;
+  }
+
+  .footer {
+      color: #7c7c7c;
+      display: inline;
+  }
+
+  .left-align {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+  .mid-left {
+      float: none;
+      width: 90%;
+      margin-top: 2em;
+  }
+
+  .footer-spacer {
+      float: left;
+      height: 0px;
+      width: 0%;
+  }
+
+  .right-align {
+      margin-top: 0px;
+      display: flex;
+      float: none;
+      width: 100%;
+  }
+
+  .footer-link {
+      text-decoration: none;
+      color: white;
+  }
+
+  .right-align:nth-child(2) {
+      flex: 1;
+  }
+
+  .ft-link1 {
+      margin-top: 2em;
+      margin-bottom: 2em;
+  }
+
+  .ft-link2 {
+      margin-top: 2em;
+      margin-left: 2em;
+      margin-bottom: 5em;
+  }
 }
