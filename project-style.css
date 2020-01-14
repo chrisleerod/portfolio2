@@ -793,8 +793,7 @@ hr {
       margin-top: 98px;
   }
 
-  .number {
-      text-decoration: none;
+  .number a {
       color: white;
   }
 
