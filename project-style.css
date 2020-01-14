@@ -790,6 +790,11 @@ hr {
       width: 5%;
   }
 
+  .number {
+      text-decoration: none;
+      color: white;
+  }
+
   .footer-link {
       text-decoration: none;
       color: white;
