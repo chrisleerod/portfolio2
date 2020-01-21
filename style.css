@@ -344,14 +344,6 @@ nav a:hover {
     transform: scale(1.03);
 }
 
-.project-title {
-    color: white;
-    padding-top: 16px;
-    padding-bottom: 8px;
-    font-size: 18px;
-    margin: 0;
-}
-
 .project-container:hover {
     transform: scale(1.02);
 }
@@ -475,6 +467,13 @@ nav a:hover {
     height:260px;
     width:500px;
     border-radius:16px;
+  }
+
+  .footer-border {
+      margin: 0 auto;
+      margin-top: 4em;
+      width: 100%;
+      border-top: 1px solid #1f1f1f;
   }
 
   .footer-container {
