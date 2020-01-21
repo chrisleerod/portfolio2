@@ -553,6 +553,7 @@ nav a:hover {
     
     nav {
       /* the following lines are not from my video, but add Edge support */
+      border-top: 0px solid #424245;
       position: relative;
       text-align: right;
       transition: none;
