@@ -574,11 +574,7 @@ nav a:hover {
       justify-content: flex-end;
       align-items: center;
     }
-
-    .header {
-        -webkit-backdrop-filter: saturate(180%) blur(20px);
-    }
-
+    
     .home {
         padding-bottom: 12px;
         border-bottom: 0px solid #424245;
