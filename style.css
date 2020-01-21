@@ -33,7 +33,7 @@ body {
 }
 
 :root {
-    --background: rgba(0, 0, 0, .95);
+    --background: rgba(0, 0, 0, .93);
 }
 
 header {
@@ -90,6 +90,8 @@ header {
 }
 
 nav {
+    padding-top: 1em;
+    border-top: 1px solid #424245;
     position: absolute;
     text-align: left;
     top: 100%;
@@ -99,6 +101,20 @@ nav {
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
+}
+
+.home {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #424245;
+}
+
+.about {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #424245;
+}
+
+.resume {
+    padding-bottom: 6px;
 }
 
 nav ul {

@@ -21,7 +21,6 @@ const nextStateMap = {
 }
 
 toggleMenu
-    .to(lineTwo, .25, {transformOrigin: "50% 50%", scale: 0}, 0)
     .to(lineThree, .25, {transformOrigin: "50% 50%"}, "change")
     .to(lineOne, .25, {transformOrigin: "50% 50%"}, "change")
     .to(lineThree, .25, {y: -15}, 0)
