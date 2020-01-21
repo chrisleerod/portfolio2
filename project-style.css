@@ -782,23 +782,38 @@ hr {
     }
     
     nav {
-      /* the following lines are not from my video, but add Edge support */
-      position: relative;
-      text-align: right;
-      transition: none;
-      transform: scale(1,1);
-      background: none;
-      top: initial;
-      left: initial;
-      width: 50%;
-      float: right;
-      padding-top: 30px;
-      padding-bottom: 15px;
-      /* end Edge support stuff */
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
+        /* the following lines are not from my video, but add Edge support */
+        border-top: 0px solid #424245;
+        position: relative;
+        text-align: right;
+        transition: none;
+        transform: scale(1,1);
+        background: none;
+        top: initial;
+        left: initial;
+        width: 50%;
+        float: right;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        /* end Edge support stuff */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+  
+      .home {
+          padding-bottom: 12px;
+          border-bottom: 0px solid #424245;
+      }
+      
+      .about {
+          padding-bottom: 12px;
+          border-bottom: 0px solid #424245;
+      }
+      
+      .resume {
+          padding-bottom: 6px;
+      }
     
     nav ul {
       display: flex;
