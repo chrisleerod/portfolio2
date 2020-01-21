@@ -33,11 +33,12 @@ body {
 }
 
 :root {
-    --background: rgba(0, 0, 0, .70);
+    --background: rgba(0, 0, 0, .90);
 }
 
+
 header {
-    background: var(--background);
+    background: rgba(0, 0, 0, .70);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     text-align: center;
     position: fixed;
