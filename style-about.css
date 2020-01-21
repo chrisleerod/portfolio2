@@ -16,6 +16,7 @@ body {
 
 header {
     background: var(--background);
+    backdrop-filter: saturate(180%) blur(20px);
     text-align: center;
     position: fixed;
     width: 100%;
