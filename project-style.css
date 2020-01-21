@@ -22,7 +22,7 @@ body {
 }
 
 :root {
-    --background: rgba(0, 0, 0, .95);
+    --background: rgba(0, 0, 0, .70);
 }
 
 header {
@@ -88,6 +88,7 @@ nav {
     left: 0;
     width: 100%;
     background: var(--background);
+    backdrop-filter: saturate(180%) blur(20px);
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
@@ -785,6 +786,7 @@ hr {
     nav {
         /* the following lines are not from my video, but add Edge support */
         border-top: 0px solid #424245;
+        backdrop-filter: none;
         position: relative;
         text-align: right;
         transition: none;
