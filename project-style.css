@@ -27,8 +27,8 @@ body {
 
 header {
     background: rgba(0, 0, 0, .80);
-    --webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
     text-align: center;
     position: fixed;
     width: 100%;
