@@ -569,6 +569,20 @@ nav a:hover {
       justify-content: flex-end;
       align-items: center;
     }
+
+    .home {
+        padding-bottom: 12px;
+        border-bottom: 0px solid #424245;
+    }
+    
+    .about {
+        padding-bottom: 12px;
+        border-bottom: 0px solid #424245;
+    }
+    
+    .resume {
+        padding-bottom: 6px;
+    }
     
     nav ul {
       display: flex;
@@ -609,7 +623,7 @@ nav a:hover {
   @media screen and (max-width: 1100px) {
 
     .welcome {
-        margin-top: 64px;
+        margin-top: 32px;
         height: 480px;
     }
 
