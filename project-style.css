@@ -391,29 +391,29 @@ hr {
 }
 
 .imagecrate {
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: 700;
-    color: #0380fc;
+    color: #ff2d55;
     transition: all .3s ease-in-out;
 }
 
 .imagecrate:hover {
-    color: #0380fc;
+    color: white;
 }
 
 .imagecrate-link {
     text-decoration: none;
-    color: #0380fc;
+    color: #ff2d55;
     transition: all .3s ease-in-out;
 }
 
 .imagecrate-link:visited {
     text-decoration: none;
-    color: #0380fc;
+    color: #ff2d55;
 }
 
 .imagecrate-link:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
 }
 
@@ -767,7 +767,7 @@ hr {
 
 .footer-link {
   text-decoration: none;
-  color: #0380fc;
+  color: #ff2d55;
 }
    
 
@@ -1095,7 +1095,7 @@ hr {
 
     .footer-link {
         text-decoration: none;
-        color: #0380fc;
+        color: #ff2d55;
     }
 
     .right-align:nth-child(2) {

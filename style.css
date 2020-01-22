@@ -227,7 +227,7 @@ nav a:hover {
     font-size: 21px;
     font-weight: 700;
     float: left;
-    color: white;
+    color: #ff2d55;
 }
 
 .learn-more-p:after {
@@ -249,7 +249,7 @@ nav a:hover {
     width: 100%;
     height: 1px;
     left: 0;
-    background-color: white;
+    background-color: #ff2d55;
     transform-origin: 0% 50%;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -537,7 +537,7 @@ nav a:hover {
 
 .footer-link {
     text-decoration: none;
-    color: #0380fc;
+    color: #ff2d55;
 }
    
 
@@ -766,7 +766,7 @@ nav a:hover {
 
   .footer-link {
       text-decoration: none;
-      color: #0380fc;
+      color: #ff2d55;
   }
 
   .right-align:nth-child(2) {
