@@ -947,6 +947,10 @@ hr {
         color: white;
     }
 
+    .about-h {
+        font-size: 32px;
+    }
+
     .goal-h {
         padding-right: 0px;
         width: 100%;
