@@ -628,7 +628,7 @@ nav a:hover {
   @media screen and (max-width: 1100px) {
 
     .welcome {
-        margin-top: 32px;
+        margin-top: 0px;
         height: 480px;
     }
 
