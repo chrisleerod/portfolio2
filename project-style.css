@@ -75,7 +75,7 @@ header {
     right: 0;
     margin-right: 1em;
     height: 40px;
-    margin-top: 6px;
+    margin-top: 2px;
     display: flex;
     align-items: center;
 }
@@ -801,8 +801,8 @@ hr {
         left: initial;
         width: 50%;
         float: right;
-        padding-top: 30px;
-        padding-bottom: 15px;
+        padding-top: 26px;
+        padding-bottom: 0;
         /* end Edge support stuff */
         display: flex;
         justify-content: flex-end;
