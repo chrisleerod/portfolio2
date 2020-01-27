@@ -3,7 +3,7 @@ const lineOne = hamburger.querySelector('.line-one');
 const lineTwo = hamburger.querySelector('.line-two');
 const lineThree = hamburger.querySelector('.line-three');
 const learnmore = document.querySelector('.learn-more');
-const arrow = learnmore.querySelector('.arrow');
+// const arrow = learnmore.querySelector('.arrow');
 
 const lines = [lineOne, lineTwo, lineThree];
 
