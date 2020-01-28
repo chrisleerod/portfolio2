@@ -963,6 +963,10 @@ hr {
         float: none;
     }
     
+    .paragraph-text {
+        font-size: 16px;
+    }
+
     .goal-p {
         width: 100%;
         float: none;
