@@ -329,42 +329,11 @@ nav a:hover {
 }
 
 .project-container {
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.project-animation {
-    animation: fadeIn 1s ease-in both;
-}
-
-.project-container:nth-child(1) {
-    animation-delay: .25s;
-}
-
-.project-container:nth-child(2) {
-    animation-delay: .5s;
-}
-
-.project-container:nth-child(3) {
-    animation-delay: .75s;
-}
-
-.project-container:nth-child(4) {
-    animation-delay: 1s;
-}
-
-.project-container:nth-child(5) {
-    animation-delay: 1.25s;
-}
-
-.project-container:nth-child(6) {
-    animation-delay: 1.5s;
-}
 .project-container:hover {
     transform: scale(1.03);
-}
-
-.project-container:hover {
-    transform: scale(1.02);
 }
 
 .project-title {
@@ -504,24 +473,13 @@ nav a:hover {
 
   .item-6 {
     background-color:#13121b;
-    background-image: url("grolivery-image.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height:260px;
-    width:500px;
-    margin-top:50px;
-    border-radius:16px;
-  }
-
-  .item-7 {
-    background-color:#13121b;
     background-image: url("parking-app.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height:260px;
     width:500px;
+    margin-top:50px;
     border-radius:16px;
   }
 
