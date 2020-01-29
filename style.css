@@ -371,7 +371,7 @@ nav a:hover {
     color: white;
     padding-top: 16px;
     padding-bottom: 8px;
-    font-size: 18px;
+    font-size: 24px;
     margin: 0;
 }
 
@@ -514,6 +514,17 @@ nav a:hover {
     border-radius:16px;
   }
 
+  .item-7 {
+    background-color:#13121b;
+    background-image: url("parking-app.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:260px;
+    width:500px;
+    border-radius:16px;
+  }
+
   .footer-border {
       margin: 0 auto;
       margin-top: 4em;
@@ -563,7 +574,7 @@ nav a:hover {
 
 .footer-link {
     text-decoration: none;
-    color: #ff2d55;
+    color: white;
 }
    
 
@@ -777,6 +788,15 @@ nav a:hover {
         margin-top:32px;  
       }
 
+      .item-7 {
+        height:200px;
+        width: 100%;
+        margin-left: 2em;
+        margin-right: 2em;
+        border-radius:16px;
+        margin-top:32px;  
+      }
+
       .footer-container {
         margin-left: 2em;
         margin-right: 2em;
@@ -814,7 +834,7 @@ nav a:hover {
 
   .footer-link {
       text-decoration: none;
-      color: #ff2d55;
+      color: white;
   }
 
   .right-align:nth-child(2) {
