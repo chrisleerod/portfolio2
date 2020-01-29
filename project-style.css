@@ -242,7 +242,7 @@ nav a:hover {
 }
 
 .project-p {
-    color: #7c7c7c;
+    color: #86868b;
 }
 
 .roles {
@@ -360,8 +360,12 @@ hr {
     font-size: 18px;
 }
 
+.about-text {
+    font-size: 24px;
+}
+
 .goal-p {
-    color: #7c7c7c;
+    color: #86868b;
     line-height: 1.7em;
     margin: 0px;
 }
@@ -397,28 +401,23 @@ hr {
 .imagecrate {
     text-decoration: none;
     font-weight: 700;
-    color: #ff2d55;
+    color: #2997ff;
     transition: all .3s ease-in-out;
-}
-
-.imagecrate:hover {
-    color: white;
 }
 
 .imagecrate-link {
     text-decoration: none;
-    color: #ff2d55;
+    color: #2997ff;
     transition: all .3s ease-in-out;
 }
 
 .imagecrate-link:visited {
     text-decoration: none;
-    color: #ff2d55;
+    color: #2997ff;
 }
 
 .imagecrate-link:hover {
     text-decoration: underline;
-    color: white;
 }
 
 .goal-p4 {
@@ -735,7 +734,7 @@ hr {
 }
 
 .footer {
-  color: #7c7c7c;
+  color: #86868b;
   display: inline;
   font-size: 14px;
 }
@@ -964,6 +963,10 @@ hr {
     }
     
     .paragraph-text {
+        font-size: 16px;
+    }
+
+    .about-text {
         font-size: 16px;
     }
 

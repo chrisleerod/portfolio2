@@ -196,7 +196,7 @@ nav a:hover {
 }
 
 .welcome-p {
-    color: #7c7c7c;
+    color: #86868b;
     line-height: 1.7em;
     letter-spacing: 2px;
     font-size: 14px;
@@ -433,7 +433,7 @@ nav a:hover {
      height: 260px;
      width: 500px;
      border-radius: 16px;
-     margin-top: 50px;  
+     margin-top: 50px;
    }
    
    .item-3 {
@@ -496,7 +496,7 @@ nav a:hover {
 }
 
 .footer {
-    color: #7c7c7c;
+    color: #86868b;
     display: inline;
     font-size: 14px;
 }
