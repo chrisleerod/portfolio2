@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    background: #050505;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: scroll;
+  }
+
+.cursor {
+    overflow: hidden;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.25);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.5s ease;
+    transition-property: background-color, border, transform;
+    transform-origin: 250% 250%;
+    z-index: 2;
+}
+
+.cursor-shrink {
+    transform: scale(1.25);
+    border: 25px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    mix-blend-mode: difference;
+    overflow: hidden;
+    /* background-color: rgba(255, 255, 255, 0.5)*/
+}
+
+.loader {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    pointer-events: none;
+}
+
+.box1 {
+    width: 25vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.box2 {
+    width: 25vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.box3 {
+    width: 25vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.box4 {
+    width: 25vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.top-image {
+    max-width: 100%;
+    background-image: linear-gradient(112deg, #3f64ee, #7592f7);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    pointer-events: none;
+}
+
+.flex-container {
+    width: 100%;
+    max-width: 1264px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 106px;
+    margin: 0 auto;
+}
+
+.project-container {
+    margin: 0 auto;
+    max-width: 1264px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: auto;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 128px;
+}
+
+.project-info h1 {
+    color: white;
+    font-size: 72px;
+    margin: 0px;
+}
+
+.project-info p {
+    color: white;
+    font-size: 42px;
+    line-height: 1.5em;
+    max-width: 500px;
+    margin: 0px;
+}
+
+.supplementary-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.supplementary-info h1 {
+    color: white;
+    font-size: 16px;
+}
+
+.supplementary-info p {
+    color: white;
+    margin: 0px;
+}
+
+.roles {
+    margin-right: 32px;
+    margin-bottom: 32px;
+}
+
+.platform {
+    margin-right: 32px;
+    margin-bottom: 32px;
+}
+
+.time-period {
+    margin-right: 32px;
+    margin-bottom: 32px;
+}
+
+.process-deck {
+    height: 50px;
+    margin-bottom: 32px;
+}
+
+.process-deck:hover .arrow-right {
+    transform: translateX(0px);
+}
+
+.arrow {
+    margin-left: 16px;
+    display: inline-flex;
+    width: 24px;
+    overflow: hidden;
+}
+
+.arrow-right {
+    fill: black;
+    width: 24px;
+    margin-left: 8px;
+    transition: all .5s ease;
+    transform: translateX(-30px);
+}
+
+.button {
+    border: 2px solid white;
+    height: 58px;
+    width: 236px;
+    padding: 8px;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.button h1 {
+    color: white;
+    font-size: 16px;
+}
+
+.project-header {
+    margin-top: 128px;
+    margin-bottom: 128px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-container h1 {
+    color: white;
+    font-size: 26px;
+    max-width: 550px;
+    line-height: 1.5em;
+    margin: 0px;
+}
+
+.header-p {
+    color: #A5ABB1;
+    font-size: 16px;
+    max-width: 550px;
+    line-height: 2em;
+    margin: 0px;
+    margin: 0 auto;
+}
+
+.project-container p {
+    color: #A5ABB1;
+    font-size: 16px;
+    line-height: 2em;
+    margin: 0px;
+    margin: 0 auto;
+}
+
+.img-container {
+    margin-bottom: 128px;
+}
+
+.google-product {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    max-width: 680px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 64px;
+    background-color: #151518;
+}
+
+figcaption {
+    font-size: 14px;
+    text-align: center;
+    color: #A5ABB1;
+}
+
+.google-product img {
+    max-width: 100%;
+    max-height: 500px;
+    margin: 0 auto;
+    pointer-events: none;
+}
+
+.background-info {
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+
+.background-info h1 {
+    margin-bottom: 16px;
+}
+
+.background-info p {
+    max-width: 680px;
+    font-size: 16px;
+}
+
+.the-challenge {
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+
+.the-challenge h1 {
+    margin-bottom: 16px;
+}
+
+.the-challenge p {
+    max-width: 680px;
+}
+
+.defining-the-sprint {
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 128px;
+}
+
+.defining-the-sprint h1 {
+    margin-bottom: 16px;
+}
+
+.defining-the-sprint p {
+    max-width: 680px;
+}
+
+.google-venture {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 128px;
+}
+
+.google-venture p {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.sprint-image {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.super {
+    font-size: 12px;
+}
+
+.understand {
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 128px;
+}
+
+.understand h1 {
+    margin-bottom: 16px;
+}
+
+.number-heading {
+    display: inline-flex;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.number {
+    color: white;
+    background-color: #4c6ff0;
+    width: 48px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.number h1 {
+    margin: 0px;
+    font-size: 16px
+}
+
+.understand2 {
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-top: 128px;
+}
+
+.understand2 h1 {
+    margin-bottom: 0px;
+}
+
+.understand p {
+    max-width: 680px;
+}
+
+.understand2 p {
+    max-width: 680px;
+}
+
+.hmw-paragraph {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.hmw-paragraph p {
+    max-width: 605px;
+    color: white;
+    font-weight: 700;
+}
+
+.guidance-paragraph {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.guidance-paragraph p {
+    max-width: 605px;
+    color: white;
+    font-weight: 700;
+}
+
+.icon {
+    min-width: 32px;
+    margin-right: 32px;
+    margin-left: 16px;
+}
+
+.insights {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 128px;
+    background-color: #151518;
+    padding: 32px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.evident {
+    margin-bottom: 64px;
+}
+
+.change {
+    margin-bottom: 64px;
+}
+
+.interest {
+    margin: 0px;
+}
+
+.insights h1 {
+    font-size: 22px;
+    margin: 0 auto;
+}
+
+.define {
+    margin: 0 auto;
+    margin-bottom: 128px;
+    max-width: 680px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-top: 128px;
+}
+
+.define p {
+    max-width: 680px;
+}
+
+.define h1 {
+    margin-bottom: 0px;
+}
+
+.insights h1 {
+    margin-bottom: 16px;
+}
+
+.integrations {
+    margin: 0 auto;
+    margin-bottom: 128px;
+    max-width: 680px;
+}
+
+.integrations h1 {
+    margin-bottom: 16px;;
+}
+
+.personas {
+    margin: 0 auto;
+    margin-bottom: 64px;
+    max-width: 680px;
+}
+
+.personas h1 {
+    margin-bottom: 16px;
+}
+
+.experienced-students {
+    margin: 0 auto;
+    margin-bottom: 128px;
+    max-width: 680px;
+}
+
+.experienced-students h1 {
+    margin-bottom: 16px;
+}
+
+.sketch {
+    margin: 0 auto;
+    margin-bottom: 128px;
+    max-width: 680px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-top: 128px;
+}
+
+.sketch h1 {
+    margin-bottom: 0px;
+}
+
+.iterations {
+    margin: 0 auto;
+    margin-bottom: 128px;
+    max-width: 680px;
+}
+
+.iterations h1 {
+    margin-bottom: 16px;
+}
+
+.validating-iterations {
+    margin: 0 auto;
+    margin-bottom: 128px;
+    max-width: 680px;
+}
+
+.validating-iterations h1 {
+    margin-bottom: 16px;
+}
+
+.prototype {
+    margin: 0 auto;
+    margin-bottom: 128px;
+    max-width: 680px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-top: 128px;
+}
+
+.prototype h1 {
+    margin-bottom: 0px;
+}
+
+.view-prototype {
+    display: inline-flex;
+    margin-top: 32px;
+}
+
+.view-prototype img {
+    transition: all 0.3s ease;
+}
+
+.view-prototype:hover img {
+    transform: translateX(16px);
+}
+
+.view-prototype span {
+    color: white;
+    margin-right: 16px;
+}
+
+.user-testing {
+    margin: 0 auto;
+    margin-bottom: 128px;
+    max-width: 680px;
+}
+
+.user-testing h1 {
+    margin-bottom: 16px;
+}
+
+.user-feedback {
+    margin: 0 auto;
+    margin-bottom: 64px;
+    max-width: 680px;
+}
+
+.user-feedback h1 {
+    margin-bottom: 16px;
+}
+
+.testing-accomplish {
+    margin: 0 auto;
+    margin-bottom: 64px;
+    max-width: 680px;
+}
+
+.testing-accomplish h1 {
+    margin-bottom: 16px;
+}
+
+.final-designs {
+    margin: 0 auto;
+    margin-bottom: 64px;
+    max-width: 680px;
+}
+
+.final-designs h1 {
+    margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 992px) {
+    .cursor {
+        display: none;
+    }
+
+    .progressContainer {
+        display: none;
+    }
+
+    .google-product {
+        padding: 32px;
+    }
+
+    .define {
+        margin-bottom: 64px;
+    }
+
+    .insights {
+        margin-bottom: 64px;
+    }
+
+    .evident {
+        margin-bottom: 32px;
+    }
+    
+    .change {
+        margin-bottom: 32px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .flex-container {
+        padding-bottom: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .project-info {
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+
+    .project-info h1 {
+        color: white;
+        font-size: 42px;
+        margin-bottom: 32px;
+    }
+    
+    .project-info p {
+        color: white;
+        font-size: 22px;
+        line-height: 1.5em;
+        max-width: 500px;
+        margin: 0px;
+    }
+
+    .project-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .project-header {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .project-header h1 {
+        margin-bottom: 16px;
+    }
+}

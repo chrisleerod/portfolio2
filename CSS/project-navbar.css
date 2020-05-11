@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Colfax', sans-serif;
+}
+
+header {
+    background: rgba(10, 10, 10, 0);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1264px;
+    margin: 0 auto;
+}
+
+.hamburger {
+    width: 40px;
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    top: 0;
+    color: white;
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+}
+
+.logo-home {
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+}
+
+.nav-toggle {
+    z-index: -1;
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    height: 40px;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    padding-top: 1em;
+    border-top: 1px solid #424245;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgb(10, 10, 10);
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+.home {
+    padding-bottom: 12px;
+    font-weight: 500;
+    border-bottom: 1px solid #424245;
+}
+
+.about {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #424245;
+}
+
+.resume {
+    padding-bottom: 12px;
+    margin-right: 0px;
+}
+
+nav ul {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 16px;
+}
+
+nav a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.nav-toggle:checked~nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked~nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.spacer {
+    width: 100%;
+    height: 56.09px;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .logo {
+        margin-left: 0;
+        float: left;
+        width: auto;
+    }
+    .logo-home {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    nav {
+        /* the following lines are not from my video, but add Edge support */
+        border-top: 0px solid #424245;
+        backdrop-filter: none;
+        position: relative;
+        text-align: right;
+        transition: none;
+        transform: scale(1, 1);
+        background: none;
+        top: initial;
+        left: initial;
+        width: 50%;
+        float: right;
+        padding-top: 20px;
+        padding-bottom: 0;
+        /* end Edge support stuff */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .home {
+        padding-bottom: 12px;
+        border-bottom: 0px solid #424245;
+    }
+    .about {
+        padding-bottom: 12px;
+        border-bottom: 0px solid #424245;
+    }
+    .resume {
+        padding-bottom: 6px;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+        text-align: right;
+    }
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+    nav a::before {
+        content: '';
+        display: block;
+        background: black;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+    .spacer {
+        width: 100%;
+        height: 76.09px;
+    }
+}

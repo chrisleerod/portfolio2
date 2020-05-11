@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Rodriguez - Product Designer</title>
+    <link rel="stylesheet" href="CSS/project.css">
+    <link rel="stylesheet" href="CSS/project-navbar.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="fonts/style.css">
+
+    <!-- Primary Meta Tags -->
+    <title>Chris Rodriguez</title>
+    <meta name="title" content="Chris Rodriguez">
+    <meta name="description"
+        content="Product designer and developer based in Nashville, TN, currently attending Belmont University.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clrodriguez.me">
+    <meta property="og:title" content="Chris Rodriguez">
+    <meta property="og:description"
+        content="Product designer and developer based in Nashville, TN, currently attending Belmont University.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/chrisleerod/portfolio3/master/images/web-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://clrodriguez.me">
+    <meta property="twitter:title" content="Chris Rodriguez">
+    <meta property="twitter:description"
+        content="Product designer and developer based in Nashville, TN, currently attending Belmont University.">
+    <meta property="twitter:image"
+        content="https://raw.githubusercontent.com/chrisleerod/portfolio3/master/images/web-preview.jpg">
+
+</head>
+
+<body onload="followMouse();">
+    <div class="wrap">
+        <div class="cursor"></div>
+
+        <div class="loader">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+        </div>
+
+        <div class="header">
+            <header>
+                <div class="container">
+                    <h1 class="logo"><a class="logo-home" href="index.html">Chris Rodriguez</a></h1>
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                    <nav>
+                        <ul>
+                            <li class="home"><a href="index.html">Home</a></li>
+                            <li class="about"><a href="about.html">About</a></li>
+                            <li class="resume"><a
+                                    href="https://drive.google.com/file/d/1aXlgDU4Z2KY_8nh4HK91mrrIH8Dhj6xc/view?usp=sharing"
+                                    target="_blank">Resume</a></li>
+                        </ul>
+                    </nav>
+                    <label for="nav-toggle" class="nav-toggle-label">
+                        <svg class="hamburger" viewBox="0 0 100 100">
+                            <line class="line-one" x1="50" y1="42" x2="100" y2="42" fill="none" stroke="#fff"
+                                stroke-miterlimit="10" stroke-width="2" />
+                            <line class="line-three" x1="50" y1="72" x2="100" y2="72" fill="none" stroke="#fff"
+                                stroke-miterlimit="10" stroke-width="2" />
+                        </svg>
+                    </label>
+                </div>
+            </header>
+        </div>
+
+        <div class="progressContainer">
+            <div class="progressFill" id="myProgress" style="height: 0%;"></div>
+            <div class="progressFillAnimation" id="myProgress"></div>
+        </div>
+
+        <div class="top-image">
+            <img class="product-image" src="images/google2.png" alt="">
+            <div class="flex-container">
+                <div class="project-info">
+                    <div class="header-title">
+                        <h1>Google Exercise</h1>
+                    </div>
+                    <div class="header-paragraph">
+                        <p>Helping new students connect with experienced students.</p>
+                    </div>
+                </div>
+                <div class="supplementary-info">
+                    <div class="roles">
+                        <h1>Roles</h1>
+                        <p>Product design</p>
+                    </div>
+                    <div class="platform">
+                        <h1>Platform</h1>
+                        <p>Mobile</p>
+                    </div>
+                    <div class="time-period">
+                        <h1>Time period</h1>
+                        <p>Feb 12-19, 2020</p>
+                    </div>
+                    <div class="process-deck">
+                        <a href="https://docs.google.com/presentation/d/11LabDODmaJgH7l2qcoFkZ_HsRcJu1xvPhqiUe7Z2wFA/edit?usp=sharing"
+                            target="_blank">
+                            <div class="button">
+                                <h1>View Process Deck</h1>
+                                <div class="arrow">
+                                    <img class="arrow-right" src="icons/arrow-right.svg" alt="">
+                                    <img class="arrow-right" src="icons/arrow-right.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-container">
+            <div class="project-header">
+                <h1>New students struggle to adjust to campus life and get their questions answered.</h1>
+                <p class="header-p">Getting questions answered related to classes, majors, guidance, advice, and other
+                    like-minded topics
+                    should not be a difficult process. This can be solved by promoting community-oriented interactions
+                    between students.
+                    <br>
+                    <br>
+                    This design exercise is my take on the problem mentioned above. It was completed over a seven-day
+                    design
+                    sprint in response to Google’s UX internship design challenge.
+                </p>
+            </div>
+            <div class="img-container">
+                <div class="google-product">
+                    <img src="images/google-product.png" alt="">
+                </div>
+                <figcaption>Login and profile designs</figcaption>
+            </div>
+            <div class="background-info">
+                <h1>Introduction</h1>
+                <p>I applied to Google’s 2020 UX summer internship and was instructed to choose between two exercises to
+                    design a solution for. I was given a seven-day deadline to research, wireframe, and design my
+                    product.
+                </p>
+            </div>
+            <div class="the-challenge">
+                <h1>The challenge</h1>
+                <p>“Your school wants to strengthen the community by encouraging experienced students to connect with
+                    new
+                    students and help them adjust to campus life. Design an experience that allows mentors and mentees
+                    to
+                    discover each other. Consider the needs of both mentors and mentees, including how someone may
+                    become a
+                    mentor and how to connect mentors to mentees.”</p>
+            </div>
+            <div class="defining-the-sprint">
+                <h1>Defining the sprint</h1>
+                <p>Given the short deadline, I decided to use Google Ventures' Design sprint methodology as a very
+                    general
+                    guideline. this helped me set goals and manage my time.</p>
+            </div>
+            <div class="img-container">
+                <div class="google-product">
+                    <img src="images/sprint.png" alt="">
+                </div>
+                <figcaption>Google Venture's methodology</figcaption>
+            </div>
+            <div class="understand2">
+                <div class="number-heading">
+                    <div class="number">
+                        <h1>01</h1>
+                    </div>
+                    <h1>Understand</h1>
+                </div>
+                <p>As an important, foundational step, I asked some critical questions to understand the problem
+                    thoroughly.
+                </p>
+            </div>
+            <div class="hmw-paragraph">
+                <img class="icon" src="icons/profile-user.svg" alt="">
+                <p>How might we allow students to connect and discover other students and mentors, become mentors, and
+                    satisfy the needs of both mentors and mentees with MentorU? </p>
+            </div>
+            <div class="guidance-paragraph">
+                <img class="icon" src="icons/compass-object.svg" alt="">
+                <p>How do current first-year students seek guidance? How do they connect with other students? How do
+                    they
+                    discover new opportunities?</p>
+            </div>
+            <div class="understand">
+                <p>After forming a couple preliminary questions, I interviewed students and conducted a survey to
+                    collect
+                    both quantitative and qualitative data. This allowed me to generate user insights, personas, and
+                    better
+                    empathize with fellow students.</p>
+            </div>
+            <div class="define">
+                <div class="number-heading">
+                    <div class="number">
+                        <h1>02</h1>
+                    </div>
+                    <h1>Define</h1>
+                </div>
+                <p>This phase utlized the research from the previous phase in order to better understand the audience
+                    and
+                    create user insights to form personas. This would allow me to better cover the evident issues and
+                    focus
+                    on what is most important.</p>
+            </div>
+            <div class="insights">
+                <div class="evident">
+                    <h1>There is an evident problem</h1>
+                    <p>The average student feels as though gaining useful advice, and mentorship is something that
+                        should be
+                        easier.</p>
+                </div>
+                <div class="change">
+                    <h1>Not much has changed</h1>
+                    <p>Speaking to both first-year and non-first-year students confirmed that 3+ years difference hadn’t
+                        changed the process much. The problem is something that most students experience.</p>
+                </div>
+                <div class="interest">
+                    <h1>There is interest in volunteering</h1>
+                    <p>The responses from the non-first-year students give a promising outlook for having enough mentors
+                        to
+                        guide first-year and transfer students.</p>
+                </div>
+            </div>
+            <div class="integrations">
+                <h1>Thinking of integrations</h1>
+                <p>After generating some user insights, I thought about ways that could assist creating a solution for
+                    the
+                    problem. I wanted to create an application that was a place of familiarity. My university is apart
+                    of
+                    the G Suite system, so integrating things such as Google Calendar was important to create a sense of
+                    familiarity.</p>
+            </div>
+            <div class="img-container">
+                <div class="google-product">
+                    <img src="images/google-calendar.png" alt="">
+                </div>
+                <figcaption>Google Calendar Logo</figcaption>
+            </div>
+            <div class="personas">
+                <h1>Using personas to identify pain points</h1>
+                <p>Once there was a clear hierarchy of the problems at hand, I began creating personas to give myself a
+                    clearer view of who I was designing this application for. I wanted to keep in mind that there were
+                    students at different levels of experience, and some new students aren’t freshman. They can also be
+                    transfer students. So moving forward, I created three personas: The Freshman, The Transfer Student,
+                    and
+                    The Experienced Senior.</p>
+            </div>
+            <div class="experienced-students">
+                <h1>Considering the experienced students</h1>
+                <p>One group of students that would help the process of helping new students would be experienced
+                    students.
+                    How would they become mentors? I wanted to create a process that offered both reward and opportunity
+                    for
+                    good students; however, I did not want to make it exclusive. I considered a GPA threshold of 3.0
+                    would
+                    grant experienced students access to become a mentor automatically. If a student did not meet these
+                    requirements, he or she could apply on campus and be interviewed.</p>
+            </div>
+            <div class="sketch">
+                <div class="number-heading">
+                    <div class="number">
+                        <h1>03-04</h1>
+                    </div>
+                    <h1>Sketch/Decide</h1>
+                </div>
+                <p>This phase utlized the research from the previous phase in order to better understand the audience
+                    and
+                    create user insights to form personas. This would allow me to better cover the evident issues and
+                    focus
+                    on what is most important.</p>
+            </div>
+            <div class="img-container">
+                <div class="google-product">
+                    <img src="images/sketches.png" alt="">
+                </div>
+                <figcaption>Initial Sketches</figcaption>
+            </div>
+            <div class="iterations">
+                <h1>Further iterations</h1>
+                <p>After analyzing the initial sketches, I began to draw some questions to either validate or invalidate
+                    my
+                    design decisions. This would allow me to refine and decide what worked and didn’t work. This phase
+                    allowed me to reveal some holes in my designs that I needed to address. Some of these holes included
+                    notifications and ways to review and respond to connection requests. I also used this time to
+                    reevaluate
+                    the navigation system I had in place.</p>
+            </div>
+            <div class="img-container">
+                <div class="google-product">
+                    <img src="images/hifi-sketches.png" alt="">
+                </div>
+                <figcaption>Hi-fi Sketches</figcaption>
+            </div>
+            <div class="validating-iterations">
+                <h1>Validating the iterations</h1>
+                <p>Not only did these iterations allow me to create more refined, user-experience-oriented designs, but
+                    it
+                    allowed me to get a grasp of what the overall direction and mission of this application was going to
+                    be.
+                    What screens could I consolidate into one? Which interfaces could be adjusted to remove unnecessary
+                    information? I was able to view the experience as a map instead of a linear timeline. My ideation
+                    was
+                    dramatically shifted thanks to these small roadblocks and changes.</p>
+            </div>
+            <div class="prototype">
+                <div class="number-heading">
+                    <div class="number">
+                        <h1>05</h1>
+                    </div>
+                    <h1>Prototype</h1>
+                </div>
+                <p>After finalizing the wireframe and sketches, I then moved onto low-fidelity prototyping while using
+                    Material UI as a framework. This expedited the design process which allowed for more thoughtful
+                    decisions. I created a user flow diagram prior to completing the prototype via InVision Studio.</p>
+            </div>
+            <div class="img-container">
+                <div class="google-product">
+                    <img src="images/low-fi1.png" alt="">
+                </div>
+                <figcaption>Login, Events/Home, Connections</figcaption>
+            </div>
+            <div class="img-container">
+                <div class="google-product">
+                    <img src="images/low-fi2.png" alt="">
+                </div>
+                <figcaption>Notifications, Calendar, Profile</figcaption>
+            </div>
+            <div class="user-testing">
+                <h1>Conducting user testing</h1>
+                <p>After designing and creating a functional prototype in InvisionApp, I conducted some user tests with
+                    three users. No context of the design was given prior to testing. The goal was to hear from unbiased
+                    users and how they felt about the functionality and experience as a whole.</p>
+                <a class="view-link" target="_blank"
+                    href="https://projects.invisionapp.com/prototype/Google-Low-Fi-cka090fgq0016e801jm1vvnn7/play/d85390bd">
+                    <div class="view-prototype">
+                        <span>
+                            View InVision Prototype
+                        </span>
+                        <img src="icons/arrow-right.svg" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="img-container">
+                <div class="google-product">
+                    <img src="images/user-test2.jpg" alt="">
+                </div>
+                <figcaption>A User Testing the Application</figcaption>
+            </div>
+            <div class="user-feedback">
+                <h1>User feedback</h1>
+                <p>“I think there should be an RSVP button on each event on the home screen. If a person already knows
+                    about
+                    the club, it should be a quick and easy process to RSVP.”
+                    <br>
+                    <br>
+                    “How do you find potential connections and your current connections?”
+                    <br>
+                    <br>
+                    “I like how the connections going to an event is shown. This can boost attendance, but I think you
+                    can
+                    increase the sizes of the pictures.”
+                </p>
+            </div>
+            <div class="testing-accomplish">
+                <h1>What did user testing accomplish?</h1>
+                <p>Getting user opinions and testing data proved to show some weaknesses in the initial designs. I went
+                    back and reiterated the designs in order strengthen the user's experience.</p>
+            </div>
+            <div class="final-designs">
+                <h1>The final designs</h1>
+                <p>Wrapping up the sprint, I created a high-fidelity prototype featuring in-depth animations to present
+                    to
+                    Google.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="column1">
+                <ul>
+                    <li class="title">Thank You</li>
+                    <li>Thank you for visiting and scrolling through my portfolio. If you want to talk about any of my
+                        projects or
+                        just chat, I'd love to hear from you!</li>
+                </ul>
+            </div>
+            <div class="column3">
+                <ul>
+                    <li class="title">Contact</li>
+                    <li>+1 615 971 6558</li>
+                    <li>chrisleerod@gmail.com</li>
+                </ul>
+            </div>
+            <div class="column2">
+                <ul>
+                    <li class="title">Social Links</li>
+                    <a href="https://github.com/chrisleerod" target="_blank">
+                        <li>GitHub</li>
+                    </a>
+                    <a href="https://linkedin.com/in/chrisleerod" target="_blank">
+                        <li>LinkedIn</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="column4">
+                <ul>
+                    <li class="title">External Links</li>
+                    <a href="https://drive.google.com/file/d/1aXlgDU4Z2KY_8nh4HK91mrrIH8Dhj6xc/view?usp=sharing"
+                        target="_blank">
+                        <li>Resume</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.6/lottie.min.js"></script>
+    <script src="JS/cursor.js"></script>
+    <script src="JS/progress-bar.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="JS/loader-app.js"></script>
+    <script src="icons/lottie.js"></script>
+</body>
+
+</html>
