@@ -10,19 +10,6 @@ body, html {
     height: 100%;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
-.wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: scroll;
-  }
-
 .cursor {
     overflow: hidden;
     width: 1.5em;
@@ -30,7 +17,7 @@ body, html {
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.4);
     background-color: rgba(255, 255, 255, 0.25);
-    position: absolute;
+    position: fixed;
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: all 0.5s ease;
@@ -113,6 +100,7 @@ body, html {
     padding-left: 32px;
     padding-right: 32px;
     margin-bottom: auto;
+    padding-bottom: 64px;
 }
 
 .project-info {
@@ -359,7 +347,7 @@ figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 8px;
+    margin-right: 16px;
 }
 
 .number h1 {
@@ -596,12 +584,59 @@ figcaption {
 
 .final-designs {
     margin: 0 auto;
-    margin-bottom: 64px;
+    margin-bottom: 128px;
     max-width: 680px;
 }
 
 .final-designs h1 {
     margin-bottom: 16px;
+}
+
+.reflection {
+    margin: 0 auto;
+    margin-bottom: 64px;
+    max-width: 680px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-top: 128px;
+}
+
+.reflection h1 {
+    margin-bottom: 16px;
+}
+
+.outcome-top {
+    margin: 0 auto;
+    margin-bottom: 128px;
+    max-width: 680px;
+}
+
+.outcome-top h1 {
+    margin-bottom: 16px;
+}
+
+.outcome {
+    margin: 0 auto;
+    margin-bottom: 64px;
+    max-width: 680px;
+}
+
+.outcome h1 {
+    margin-bottom: 16px;
+}
+
+.thank-you {
+    margin: 0 auto;
+    max-width: 680px;
+    margin-bottom: 128px;
+}
+
+.thank-you h1 {
+    margin-bottom: 16px;
+}
+
+.border {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
 @media only screen and (max-width: 992px) {

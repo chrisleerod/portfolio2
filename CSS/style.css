@@ -14,15 +14,6 @@ body, html {
     display: none;
 }
 
-.wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: scroll;
-  }
-
 .cursor {
     overflow: hidden;
     width: 1.5em;
@@ -30,7 +21,7 @@ body, html {
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.4);
     background-color: rgba(255, 255, 255, 0.25);
-    position: absolute;
+    position: fixed;
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: all 0.5s ease;
@@ -362,7 +353,7 @@ body, html {
 }
 
 .google-project:hover .arrow-right {
-    transform: translateX(25px);
+    transform: translateX(16px);
 }
 
 .google-project:hover .google-image {
@@ -376,7 +367,7 @@ body, html {
 }
 
 .localize-project:hover .arrow-right {
-    transform: translateX(25px);
+    transform: translateX(16px);
 }
 
 .project-left {
